@@ -2,5 +2,12 @@
     <element audit="true" db_object_id="71cc95a283e012108765fcb6feaad3a1" extends="task" label="NeedIt Task" max_length="40" name="x_58872_needit_needit_task" type="collection">
         <element label="NeedIt" max_length="32" name="u_needit" reference="x_58872_needit_needit" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
     </element>
 </database>
